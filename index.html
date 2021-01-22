@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MiniVue</title>
+  <script src="./core/Dep.js"></script>
+  <script src="./core/Watcher.js"></script>
+  <script src="./core/Compiler.js"></script>
+  <script src="./core/Observer.js"></script>
+  <script src="./core/Vue.js"></script>
+</head>
+<body>
+<div id="app">{{msg}}</div>
+</body>
+<script>
+  let vm = new Vue({
+    el:'#app',
+    data: {
+      msg: 'hello app'
+    }
+  })
+</script>
+</html>
