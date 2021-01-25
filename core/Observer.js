@@ -30,7 +30,7 @@ class Observer {
         // Dep.target && dep.addSub(Dep.target); //收集依赖
         if(Dep.target){
           //Dep.target存放具体的依赖，在编译阶段检测到依赖后就被赋值
-          dep.addDep(Dep.target); // 收集依赖
+          dep.addSub(Dep.target); // 收集依赖
         }
         return value;
 
